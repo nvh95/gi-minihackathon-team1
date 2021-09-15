@@ -1,0 +1,10 @@
+{
+  "description": "undefined",
+  "main": "index.jsx",
+  "dependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0",
+    "styled-components": "5.3.1"
+  },
+  "devDependencies": {}
+}
