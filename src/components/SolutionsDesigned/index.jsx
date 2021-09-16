@@ -5,7 +5,6 @@ import LeftImage from "./LeftImage";
 import styled from "styled-components";
 
 const ImageWrapper = styled.div`
-  border-left: 1px solid #fd5b2f;
   height: 100%;
   text-align: center;
 `;
