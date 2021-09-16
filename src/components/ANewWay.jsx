@@ -53,6 +53,7 @@ const Logo = styled.img`
 `;
 const LeftAside = styled.div`
   /* width: 50%; */
+  margin-top: 10rem;
 `
 const RightAside = styled.div`
   /* width: 50%; */
@@ -71,7 +72,6 @@ const Slogan = styled.div`
   width: 475px;
   font-weight: bold;
   font-size: 58.5056px;
-  margin-top: 10rem;
 `
 const Button = styled.button`
   background-color: #FD5B2F;
@@ -134,7 +134,7 @@ function A() {
         <RightAside>
           <Image src={Logo50}></Image>
           <RoundImage src={ellipse1} size={250} right={50}/>
-          <RoundImage src={ellipse2} size={141} right={150} top={300}/>
+          <RoundImage src={ellipse2} size={180} right={15} top={300}/>
           <RoundImage src={ellipse3} size={74} right={60}/>
         </RightAside>
       </Body>
