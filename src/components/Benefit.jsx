@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import { COLORS } from "../constants";
+import { COLORS, FONT_SIZES } from "../constants";
 import eventImage from "../images/event.png";
 import dumbbell from "../images/dumbbell.png";
 import wifi1 from "../images/wifi1.png";
@@ -88,7 +88,7 @@ const Title = styled.div`
 const Content = styled.div`
   display: flex;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: ${FONT_SIZES.LARGE};
   padding: 16px 0 32px;
 `;
 

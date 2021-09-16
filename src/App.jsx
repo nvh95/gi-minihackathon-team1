@@ -10,9 +10,9 @@ import TheOneSpace from "./components/TheOneSpace";
 import OurVision from "./components/OurVision";
 import BecomeAMember from "./components/BecomeAMember";
 
-export default () => {
+function App () {
   return (
-    <div>
+    <Wrapper>
       {/* Harvey */}
       <ANewWay />
       {/* Casey */}
@@ -25,10 +25,12 @@ export default () => {
       <BecomeAMember />
       {/* Henry */}
       <Footer />
-    </div>
+    </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  background-color: red;
+  padding: 32px;
 `;
+
+export default App;
