@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-
-import "./index.css";
 import ANewWay from "./components/ANewWay";
+import BecomeAMember from "./components/BecomeAMember";
 import Benefit from "./components/Benefit";
 import Footer from "./components/Footer";
+import OurVision from "./components/OurVision";
 import SolutionsDesigned from "./components/SolutionsDesigned";
 import TheOneSpace from "./components/TheOneSpace";
-import OurVision from "./components/OurVision";
-import BecomeAMember from "./components/BecomeAMember";
+import "./index.css";
 
-function App () {
+
+const App = () => {
   return (
     <Wrapper>
       {/* Harvey */}

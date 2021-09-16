@@ -2,21 +2,24 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  height: 100vh;
   background-color: #ffffffe5;
   display: flex;
   align-items: center;
   padding-left: 10%;
   padding-right: 10%;
   gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const ImageContainer = styled.div`
   flex: 1;
+  flex-basis: 300px;
 `;
 
 const TextContainer = styled.div`
   flex: 1;
+  flex-basis: 300px;
 `;
 
 const Title = styled.div`
@@ -44,17 +47,32 @@ export default function SectionLayout({
   content,
   category,
   image,
-  footer
+  footer,
+  swap = false,
 }) {
   return (
     <Wrapper>
-      <ImageContainer>{image}</ImageContainer>
-      <TextContainer>
-        <Category>{category}</Category>
-        <Title>{title}</Title>
-        <Content>{content}</Content>
-        <Footer>{footer}</Footer>
-      </TextContainer>
+      {swap ? (
+        <>
+          <TextContainer>
+            <Category>{category}</Category>
+            <Title>{title}</Title>
+            <Content>{content}</Content>
+            <Footer>{footer}</Footer>
+          </TextContainer>
+          <ImageContainer>{image}</ImageContainer>
+        </>
+      ) : (
+        <>
+          <ImageContainer>{image}</ImageContainer>
+          <TextContainer>
+            <Category>{category}</Category>
+            <Title>{title}</Title>
+            <Content>{content}</Content>
+            <Footer>{footer}</Footer>
+          </TextContainer>
+        </>
+      )}
     </Wrapper>
   );
 }
