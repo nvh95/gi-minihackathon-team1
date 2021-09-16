@@ -30,7 +30,7 @@ const App = () => {
 };
 
 const Wrapper = styled.div`
-  padding: 32px;
+  padding: 96px;
 `;
 
 export default App;

@@ -37,7 +37,7 @@ function Benefit() {
         </Item>
 
         <Item>
-          <IconWrapper>
+          <IconWrapper width="50px">
             <Icon src={wifi1} />
           </IconWrapper>
           <IconTitle>Community Events</IconTitle>
@@ -105,8 +105,8 @@ const Item = styled.div`
 `;
 
 const IconWrapper = styled.div`
-  width: 48px;
-  height: 48px;
+  width: ${props=>`${props.width|| 48}px`};
+  height: ${props=>`${props.height || 48}px`};
 `;
 
 const Icon = styled.img`
