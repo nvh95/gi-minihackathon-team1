@@ -38,6 +38,7 @@ const ListItem = styled.li`
 const Body = styled.div`
   height: 80%;
   display: flex;
+  position: relative;
 `;
 const Footer = styled.div`
   display: flex;
@@ -63,6 +64,7 @@ const BlurBar = styled.div`
   width: 777px;
   height: 100px;
   z-index: 1;
+  margin-top: 2rem;
 `
 const Slogan = styled.div`
   width: 475px;
@@ -87,6 +89,17 @@ const Content = styled.div`
 const Image = styled.img`
   border-radius: 50% 50% 0 0;
   height: 85%;
+  position: relative;
+  right: 14rem;
+  margin-top: 2rem;
+  z-index: 0;
+`
+const RoundImage = styled.img`
+  border-radius: 50%;
+  width: ${(props) => `${props.size}px`};
+  position: fixed;
+  top: ${(props) => `${props.top}px`};
+  right: ${(props) => `${props.right}px`};
 `
 function A() {
   return (
@@ -118,6 +131,9 @@ function A() {
         </LeftAside>
         <RightAside>
           <Image src={Logo50}></Image>
+          <RoundImage src={ellipse1} size={250} right={200}/>
+          <RoundImage src={ellipse2} size={141} right={150} top={300}/>
+          <RoundImage src={ellipse3} size={74} right={60}/>
         </RightAside>
       </Body>
       <Footer>
