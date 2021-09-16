@@ -12,6 +12,7 @@ import ellipse1 from "../images/Ellipse 1.png";
 import ellipse2 from "../images/Ellipse 2.png";
 import ellipse3 from "../images/Ellipse 3.png";
 import vector from "../images/Vector.png"
+import vector1 from "../images/Vector 1.png"
 
 
 const Wrapper = styled.div`
@@ -96,8 +97,8 @@ const Image = styled.img`
 `
 const RoundImage = styled.img`
   border-radius: 50%;
+  position: absolute;
   width: ${(props) => `${props.size}px`};
-  position: fixed;
   top: ${(props) => `${props.top}px`};
   right: ${(props) => `${props.right}px`};
 `
@@ -119,6 +120,7 @@ function A() {
       </Header>
       <Body>
         <LeftAside>
+          <img src={vector1} alt=''></img>
           <Slogan>A new way to revolutionise your workspace to yourself</Slogan>
           <BlurBar>
             <City>
@@ -131,7 +133,7 @@ function A() {
         </LeftAside>
         <RightAside>
           <Image src={Logo50}></Image>
-          <RoundImage src={ellipse1} size={250} right={200}/>
+          <RoundImage src={ellipse1} size={250} right={50}/>
           <RoundImage src={ellipse2} size={141} right={150} top={300}/>
           <RoundImage src={ellipse3} size={74} right={60}/>
         </RightAside>
