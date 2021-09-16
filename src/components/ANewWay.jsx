@@ -54,6 +54,8 @@ const Logo = styled.img`
 const LeftAside = styled.div`
   /* width: 50%; */
   margin-top: 10rem;
+  isolation: isolate;
+  z-index: 1;
 `
 const RightAside = styled.div`
   /* width: 50%; */
