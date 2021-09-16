@@ -10,6 +10,8 @@ const Wrapper = styled.div`
   gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 `;
 
 const ImageContainer = styled.div`
@@ -45,6 +47,7 @@ const Footer = styled.div``;
 export default function SectionLayout({
   title,
   content,
+  contentMeta,
   category,
   image,
   footer,
@@ -58,6 +61,7 @@ export default function SectionLayout({
             <Category>{category}</Category>
             <Title>{title}</Title>
             <Content>{content}</Content>
+            {contentMeta && contentMeta}
             <Footer>{footer}</Footer>
           </TextContainer>
           <ImageContainer>{image}</ImageContainer>
@@ -69,6 +73,7 @@ export default function SectionLayout({
             <Category>{category}</Category>
             <Title>{title}</Title>
             <Content>{content}</Content>
+            {contentMeta && contentMeta}
             <Footer>{footer}</Footer>
           </TextContainer>
         </>
