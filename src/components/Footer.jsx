@@ -55,9 +55,11 @@ function Footer() {
 }
 
 const Wrapper = styled.div`
+  padding: 256px 0px 32px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  /* background-image: linear-gradient(red, yellow); */
 `;
 
 const Info = styled.div`
