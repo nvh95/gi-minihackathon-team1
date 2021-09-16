@@ -38,13 +38,13 @@ export default function OurVision() {
           <ImageWrapper size={88} top={0} left="335px">
             <Image />
           </ImageWrapper>
-          <ImageWrapper size={250} top="10px" right="180px">
+          <ImageWrapper size={250} top="10px" right="125px">
             <Image />
           </ImageWrapper>
           <ImageWrapper size={208} top="150px" left="335px">
             <Image />
           </ImageWrapper>
-          <ImageWrapper size={335} bottom={0} right="180px">
+          <ImageWrapper size={335} bottom={0} right="125px">
             <Image />
           </ImageWrapper>
         </ImageSectionWrapper>
